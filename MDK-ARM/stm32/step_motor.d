@@ -1,5 +1,5 @@
-stm32\step_motor.o: ..\User\step_motor.c
-stm32\step_motor.o: ..\User\step_motor.h
+stm32\step_motor.o: ..\User\STEP\step_motor.c
+stm32\step_motor.o: ..\User\STEP\step_motor.h
 stm32\step_motor.o: ../Core/Inc/main.h
 stm32\step_motor.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h
 stm32\step_motor.o: ../Core/Inc/stm32f1xx_hal_conf.h

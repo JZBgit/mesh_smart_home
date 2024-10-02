@@ -1,5 +1,5 @@
-stm32\dht11.o: ..\User\dht11.c
-stm32\dht11.o: ..\User\dht11.h
+stm32\dht11.o: ..\User\DHT11\dht11.c
+stm32\dht11.o: ..\User\DHT11\dht11.h
 stm32\dht11.o: ../Core/Inc/main.h
 stm32\dht11.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h
 stm32\dht11.o: ../Core/Inc/stm32f1xx_hal_conf.h

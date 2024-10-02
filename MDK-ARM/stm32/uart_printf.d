@@ -1,5 +1,5 @@
-stm32\uart_printf.o: ..\User\uart_printf.c
-stm32\uart_printf.o: ..\User\uart_printf.h
+stm32\uart_printf.o: ..\User\hardware\uart_printf.c
+stm32\uart_printf.o: ..\User\hardware\uart_printf.h
 stm32\uart_printf.o: ../Core/Inc/main.h
 stm32\uart_printf.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h
 stm32\uart_printf.o: ../Core/Inc/stm32f1xx_hal_conf.h

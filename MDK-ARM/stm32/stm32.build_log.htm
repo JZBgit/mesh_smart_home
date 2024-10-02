@@ -21,17 +21,37 @@ Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V3.0.9.0
 Dialog DLL:      TCM.DLL V1.53.0.0
  
 <h2>Project:</h2>
-E:\找工作\知识点\STM32+ESP8266+MQTT+阿里云\3.源码\6.编写esp8266 at命令订阅消息程序\stm32_MQTT\MDK-ARM\stm32.uvprojx
+E:\找工作\知识点\STM32+ESP8266+MQTT+阿里云\3.源码\6.编写esp8266 at命令订阅消息程序\mesh_smart_home\MDK-ARM\stm32.uvprojx
 Project File Date:  10/02/2024
 
 <h2>Output:</h2>
 *** Using Compiler 'V5.06 update 7 (build 960)', folder: 'D:\Keil_v5\Keil_install\ARM\ARMCC\Bin'
 Build target 'stm32'
-compiling main_program.c...
+compiling core_json.c...
+..\User\JSON\core_json.c(193): warning:  #186-D: pointless comparison of unsigned integer with zero
+      assert( buf[ i ] < '\0' );
+..\User\JSON\core_json.c(193): warning:  #186-D: pointless comparison of unsigned integer with zero
+      assert( buf[ i ] < '\0' );
+..\User\JSON\core_json.c(255): warning:  #186-D: pointless comparison of unsigned integer with zero
+          if( buf[ *start ] >= '\0' )
+..\User\JSON\core_json.c(471): warning:  #186-D: pointless comparison of unsigned integer with zero
+                  if( iscntrl_( c ) )
+..\User\JSON\core_json.c(531): warning:  #186-D: pointless comparison of unsigned integer with zero
+              else if( iscntrl_( buf[ i ] ) )
+..\User\JSON\core_json.c: 5 warnings, 0 errors
+compiling dht11.c...
+compiling esp8266.c...
+compiling time_handle.c...
+compiling uart_printf.c...
+..\User\hardware\uart_printf.c(9): warning:  #1-D: last line of file ends without a newline
+  }
+..\User\hardware\uart_printf.c: 1 warning, 0 errors
+compiling led.c...
+compiling step_motor.c...
 linking...
-Program Size: Code=19700 RO-data=1192 RW-data=2136 ZI-data=2000  
+Program Size: Code=19700 RO-data=1192 RW-data=2132 ZI-data=1996  
 FromELF: creating hex file...
-"stm32\stm32.axf" - 0 Error(s), 0 Warning(s).
+"stm32\stm32.axf" - 0 Error(s), 6 Warning(s).
 
 <h2>Software Packages used:</h2>
 
@@ -42,16 +62,16 @@ Package Vendor: ARM
    * Component: CORE Version: 5.5.0
 
 <h2>Collection of Component include folders:</h2>
-  E:\找工作\知识点\STM32+ESP8266+MQTT+阿里云\3.源码\6.编写esp8266 at命令订阅消息程序\stm32_MQTT\MDK-ARM\RTE
+  E:\找工作\知识点\STM32+ESP8266+MQTT+阿里云\3.源码\6.编写esp8266 at命令订阅消息程序\mesh_smart_home\MDK-ARM\RTE
   D:\Keil_v5\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include
   D:\Keil_v5\Packs\Keil\STM32F1xx_DFP\2.4.0\Device\Include
 
 <h2>Collection of Component Files used:</h2>
 
    * Component: ARM::CMSIS:CORE:5.5.0
-      Include file:  CMSIS\Core\Include\tz_context.h
       Source file:   CMSIS\Core\Template\ARMv8-M\main_s.c
       Source file:   CMSIS\Core\Template\ARMv8-M\tz_context.c
+      Include file:  CMSIS\Core\Include\tz_context.h
 </pre>
 </body>
 </html>

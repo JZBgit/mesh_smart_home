@@ -1,5 +1,5 @@
-stm32\esp8266.o: ..\User\esp8266.c
-stm32\esp8266.o: ..\User\esp8266.h
+stm32\esp8266.o: ..\User\ESP8266\esp8266.c
+stm32\esp8266.o: ..\User\ESP8266\esp8266.h
 stm32\esp8266.o: ../Core/Inc/main.h
 stm32\esp8266.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h
 stm32\esp8266.o: ../Core/Inc/stm32f1xx_hal_conf.h
@@ -37,5 +37,5 @@ stm32\esp8266.o: D:\Keil_v5\Keil_install\ARM\ARMCC\Bin\..\include\string.h
 stm32\esp8266.o: D:\Keil_v5\Keil_install\ARM\ARMCC\Bin\..\include\stdlib.h
 stm32\esp8266.o: ../User/OLED/oled.h
 stm32\esp8266.o: ../Core/Inc/spi.h
-stm32\esp8266.o: ..\User\core_json.h
+stm32\esp8266.o: ..\User\JSON\core_json.h
 stm32\esp8266.o: D:\Keil_v5\Keil_install\ARM\ARMCC\Bin\..\include\stdbool.h

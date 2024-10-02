@@ -31,4 +31,4 @@ stm32\stm32f1xx_it.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h
 stm32\stm32f1xx_it.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h
 stm32\stm32f1xx_it.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h
 stm32\stm32f1xx_it.o: ../Core/Inc/stm32f1xx_it.h
-stm32\stm32f1xx_it.o: ../User/esp8266.h
+stm32\stm32f1xx_it.o: ..\User\ESP8266\esp8266.h

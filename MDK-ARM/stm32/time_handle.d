@@ -1,5 +1,5 @@
-stm32\time_handle.o: ..\User\time_handle.c
-stm32\time_handle.o: ..\User\time_handle.h
+stm32\time_handle.o: ..\User\hardware\time_handle.c
+stm32\time_handle.o: ..\User\hardware\time_handle.h
 stm32\time_handle.o: ../Core/Inc/main.h
 stm32\time_handle.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h
 stm32\time_handle.o: ../Core/Inc/stm32f1xx_hal_conf.h
