@@ -3,6 +3,6 @@
 
 #include "main.h"
 
-void rotate(uint8_t status);
+void rotate(uint8_t status, uint8_t num);
 
 #endif

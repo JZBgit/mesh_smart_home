@@ -1,0 +1,13 @@
+stm32\systasks.o: ..\Core\Src\systasks.c
+stm32\systasks.o: ../Core/Inc/systasks.h
+stm32\systasks.o: ..\FreeRTOS\include\FreeRTOS.h
+stm32\systasks.o: D:\Keil_v5\Keil_install\ARM\ARMCC\Bin\..\include\stddef.h
+stm32\systasks.o: D:\Keil_v5\Keil_install\ARM\ARMCC\Bin\..\include\stdint.h
+stm32\systasks.o: ../Core/Inc/FreeRTOSConfig.h
+stm32\systasks.o: ..\FreeRTOS\include\projdefs.h
+stm32\systasks.o: ..\FreeRTOS\include\portable.h
+stm32\systasks.o: ..\FreeRTOS\include\deprecated_definitions.h
+stm32\systasks.o: ..\FreeRTOS\portable\RVDS\ARM_CM3\portmacro.h
+stm32\systasks.o: ..\FreeRTOS\include\mpu_wrappers.h
+stm32\systasks.o: ..\FreeRTOS\include\task.h
+stm32\systasks.o: ..\FreeRTOS\include\list.h

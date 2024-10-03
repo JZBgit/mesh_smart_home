@@ -67,7 +67,7 @@ void user_init_program(void)
 	set_rgb(255, 255, 255);
   OLED_Init(); 
 	BH1750_Init();
-  esp8266_init();
+//  esp8266_init();
   while(dht11_init())
   {
     HAL_Delay(500);
@@ -76,8 +76,11 @@ void user_init_program(void)
 		OLED_ShowString(0,0,"dht11 init faild",16);
   }
 //  OLED_printf (0,0,"  Alibaba Cloud IOT ");
-	OLED_ShowString(0,0,"  Alibaba Cloud IOT ",16);
-  time_slot_start();
+	OLED_ShowString(0,0,"Ali Cloud IOT",16);
+	OLED_ShowString(0,2,"T:",16);
+	OLED_ShowString(64,2,"H:",16);
+	OLED_ShowString(0,4,"L:",16);
+//  time_slot_start();
 }
 /**
   * @brief          初始化函数,相当于Arduino的loop()函数,一直执行该函数
@@ -86,9 +89,9 @@ void user_init_program(void)
   */
 void user_main_program(void)
 {
-  if(esp8266_receive_msg()!=1)
-  {
-  }
+//  if(esp8266_receive_msg()!=1)
+//  {
+//  }
   if(index_dht11 ==1)
   {
     dht11_read_data(&temp_value,&humi_value);
@@ -121,18 +124,18 @@ void user_main_program(void)
   if(index_send_msg==1)
 	{
 		index_send_msg =0;
-		if(esp8266_send_msg()==0)
-		{
-		}
-		else
-		{
-			printf("msg send error\r\n");
-		}
+//		if(esp8266_send_msg()==0)
+//		{
+//		}
+//		else
+//		{
+//			printf("msg send error\r\n");
+//		}
 	}
-  if(index_step==1)
-  {
-    rotate(direct_value);
-    index_step=0;
-  }
+//  if(index_step==1)
+//  {
+//    rotate(direct_value);
+//    index_step=0;
+//  }
 }
 

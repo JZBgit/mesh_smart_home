@@ -1,23 +1,24 @@
 /**
-****************************(C) COPYRIGHT 2023 图解编程****************************
-* @file       led.c
-* @brief      控制led灯相关函数
+********************************************************
+* @file       step_motor.c
+* @brief      控制步进电机相关函数
 * @note       
 * @history
 *  Version    Date            Author
-*  V1.0.0     05-15-2023      图解编程    
+*  V1.0.0     05-15-2021      蒋志邦    
 *
-****************************(C) COPYRIGHT 2023 图解编程****************************
+********************************************************
 */
  
 #include "step_motor.h"
 
 /**
-  * @brief          控制led1亮灭函数
-  * @param[in]      status: 为1时led灯点亮,为0时led灯熄灭
+  * @brief          控制步进电机转动方向和圈数
+  * @param[in]      status: 为0时顺时针转动，为1时逆时针转动
+	                  num: 转动圈数
   * @retval         none
   */
-void rotate(uint8_t status)
+void rotate(uint8_t status, uint8_t num)
 {
 	static int step_sel=0;
 	if(status){

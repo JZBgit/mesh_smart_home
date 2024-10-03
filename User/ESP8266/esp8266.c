@@ -291,7 +291,7 @@ uint8_t esp8266_reset(void)
   * @param[in]      none
   * @retval         返回0发送数据成功,返回1发送数据失败
   */
-uint8_t esp8266_send_msg(void)	
+uint8_t esp8266_send_msg(uint8_t temp_value,uint8_t humi_value,uint16_t light)	
 {
 	uint8_t retval =0;	
   uint16_t count = 0;			
@@ -337,7 +337,7 @@ uint8_t esp8266_send_msg(void)
   * @param[in]      none
   * @retval         返回0接收数据正常,返回1接收数据异常或无数据
   */
-uint8_t esp8266_receive_msg(void)	
+uint8_t esp8266_receive_msg(uint8_t *num_value,uint8_t *direct_value,uint8_t *led_status,uint8_t *Red_value,uint8_t *Blue_value,uint8_t *Green_value)	
 {
   uint8_t retval =0;
 	int msg_len=0;

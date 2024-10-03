@@ -27,31 +27,12 @@ Project File Date:  10/02/2024
 <h2>Output:</h2>
 *** Using Compiler 'V5.06 update 7 (build 960)', folder: 'D:\Keil_v5\Keil_install\ARM\ARMCC\Bin'
 Build target 'stm32'
-compiling core_json.c...
-..\User\JSON\core_json.c(193): warning:  #186-D: pointless comparison of unsigned integer with zero
-      assert( buf[ i ] < '\0' );
-..\User\JSON\core_json.c(193): warning:  #186-D: pointless comparison of unsigned integer with zero
-      assert( buf[ i ] < '\0' );
-..\User\JSON\core_json.c(255): warning:  #186-D: pointless comparison of unsigned integer with zero
-          if( buf[ *start ] >= '\0' )
-..\User\JSON\core_json.c(471): warning:  #186-D: pointless comparison of unsigned integer with zero
-                  if( iscntrl_( c ) )
-..\User\JSON\core_json.c(531): warning:  #186-D: pointless comparison of unsigned integer with zero
-              else if( iscntrl_( buf[ i ] ) )
-..\User\JSON\core_json.c: 5 warnings, 0 errors
-compiling dht11.c...
-compiling esp8266.c...
-compiling time_handle.c...
-compiling uart_printf.c...
-..\User\hardware\uart_printf.c(9): warning:  #1-D: last line of file ends without a newline
-  }
-..\User\hardware\uart_printf.c: 1 warning, 0 errors
 compiling led.c...
 compiling step_motor.c...
 linking...
-Program Size: Code=19700 RO-data=1192 RW-data=2132 ZI-data=1996  
+Program Size: Code=25532 RO-data=1528 RW-data=2264 ZI-data=5976  
 FromELF: creating hex file...
-"stm32\stm32.axf" - 0 Error(s), 6 Warning(s).
+"stm32\stm32.axf" - 0 Error(s), 0 Warning(s).
 
 <h2>Software Packages used:</h2>
 
@@ -69,9 +50,9 @@ Package Vendor: ARM
 <h2>Collection of Component Files used:</h2>
 
    * Component: ARM::CMSIS:CORE:5.5.0
-      Source file:   CMSIS\Core\Template\ARMv8-M\main_s.c
-      Source file:   CMSIS\Core\Template\ARMv8-M\tz_context.c
       Include file:  CMSIS\Core\Include\tz_context.h
+      Source file:   CMSIS\Core\Template\ARMv8-M\tz_context.c
+      Source file:   CMSIS\Core\Template\ARMv8-M\main_s.c
 </pre>
 </body>
 </html>

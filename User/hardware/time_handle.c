@@ -36,27 +36,30 @@ uint8_t index_step = 0;
   * @param[in]      htim:定时器
   * @retval         none
   */
-void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim)	
-{
-	if (htim->Instance == htim2.Instance)
-	{
-		index_10ms++;	 
-    if(index_10ms%100==0)
-    {
-      index_oled=1;
-      index_dht11=1;
-      index_led=1;
-			index_bh1750=1;
-    }
-    if(index_10ms >= 500)	
-		{
-			index_send_msg=1;
-			index_10ms = 0;
-		}
-		index_step=1;
-	}
+//void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim)	
+//{
+//	if (htim->Instance == htim2.Instance)
+//	{
+//		index_10ms++;	 
+//    if(index_10ms%100==0)
+//    {
+//      index_oled=1;
+//      index_dht11=1;
+//      index_led=1;
+//			index_bh1750=1;
+//    }
+//    if(index_10ms >= 500)	
+//		{
+//			index_send_msg=1;
+//			index_10ms = 0;
+//		}
+//		index_step=1;
+//	}
+//	if (htim->Instance == TIM4) {
+//    HAL_IncTick();
+//  }
 
-}
+//}
 /**
   * @brief          任务轮询时间片,开启定时器2
   * @param[in]      none
